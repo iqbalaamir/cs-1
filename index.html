@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-primary navbar-primary">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#" style="color: orange;">Logo</a>
+
+  <!-- Links -->
+ 
+</nav>
+	
+		<div class="hero container" style="margin: 15px;">
+		 <p>Building Awesome Website</p>
+		 <h1>Coming Soon</h1>
+		 <hr>
+		 	<p id="launch"></p>
+		 	<br>
+	
+		 		<h4>Get Notified</h4><hr>
+		 	  <form style="padding-right: 150px;padding-left: 150px;">
+    			<div class="input-group mb-3">
+      			<input type="text" class="form-control" placeholder="Your Email" id="mail" name="email">
+      			<div class="input-group-append">
+        		<span class="input-group-text">@example.com</span>
+      			</div>
+    			</div>
+    			<button type="submit" class="btn btn-primary">Submit</button>
+  				</form>
+  				<br><br><br>
+  					<ul style="padding-left: 350px;">
+		 		<li>
+		 			<a href="#">
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span class="fa fa-facebook"></span>
+		 			</a>
+		 		</li>
+		 		<li>
+		 			<a href="">
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span class="fa fa-twitter"></span>
+		 			</a>
+		 		</li>
+		 		<li>
+		 			<a href="">
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span class="fa fa-whatsapp"></span>
+		 			</a>
+		 		</li>
+		 		<li>
+		 			<a href="">
+		 			<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span class="fa fa-linkedin"></span>
+		 			</a>
+		 		</li>
+		 		<li>
+		 			<a href="">
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span></span>
+		 				<span class="fa fa-instagram"></span>
+		 			</a>
+		 		</li>
+		 	</ul>
+	    </div>
+	  
+
+
+	
+</body>
+ <script type="text/javascript">
+ 	var countDownDate = new Date("SEP 13,2020 00:00:00:00").getTime();
+ 	var x = setInterval(function() {
+ 		// body...
+ 		var now = new Date().getTime();
+
+ 		var distance = countDownDate - now;
+
+ 		var days = Math.floor(distance/ (1000*60*60*24));
+ 		var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+ 		var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+ 		var seconds = Math.floor((distance%(1000*60))/1000);
+
+ 		document.getElementById('launch').innerHTML =days+"d " + hours + "h " + minutes + "m " +seconds + "s ";
+
+ 				if (distance < 0) {
+ 					clearInterval(x);
+ 					document.getElementById("launch").innerHTML="EXPIRED";
+ 				}
+ 	},1000);
+ </script>
+</html>
